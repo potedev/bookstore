@@ -1,0 +1,62 @@
+{
+  "name": "bookstore",
+  "version": "1.0.0",
+  "description": "Bookstore is an online app to manage a bookstore",
+  "main": "index.js",
+  "scripts": {
+    "build": "tsc",
+    "watch": "tsc -w",
+    "dev": "nodemon dist/index.js",
+    "start": "node dist/index.js",
+    "start2": "ts-node src/index.ts",
+    "dev2": "nodemon --exec ts-node src/index.ts",
+    "lint": "eslint --ext ts src",
+    "lint:fix": "eslint . --ext .ts --fix",
+    "prettier-watch": "onchange 'src/**/*.ts' -- eslint . --ext .ts --fix",
+    "create:migration": "mikro-orm migration:create"
+  },
+  "keywords": [
+    "Typescript",
+    "TypeOrm",
+    "Express",
+    "Jest",
+    "Swagger"
+  ],
+  "author": "Quentin Danneville",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/connect-redis": "^0.0.16",
+    "@types/express": "^4.17.11",
+    "@types/express-session": "^1.17.3",
+    "@types/node": "^14.14.37",
+    "@types/redis": "^2.8.28",
+    "@typescript-eslint/eslint-plugin": "^4.21.0",
+    "@typescript-eslint/parser": "^4.21.0",
+    "eslint": "^7.23.0",
+    "eslint-config-prettier": "^8.1.0",
+    "eslint-plugin-prettier": "^3.3.1",
+    "nodemon": "^2.0.7",
+    "prettier": "^2.2.1",
+    "ts-node": "^9.1.1",
+    "typescript": "^4.2.4"
+  },
+  "dependencies": {
+    "@types/cors": "^2.8.10",
+    "@types/ioredis": "^4.22.3",
+    "@types/nodemailer": "^6.4.1",
+    "@types/uuid": "^8.3.0",
+    "apollo-server-express": "^2.22.2",
+    "argon2": "^0.27.2",
+    "connect-redis": "^5.1.0",
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "express-session": "^1.17.1",
+    "graphql": "^15.5.0",
+    "ioredis": "^4.26.0",
+    "nodemailer": "^6.5.0",
+    "reflect-metadata": "^0.1.13",
+    "type-graphql": "^1.1.1",
+    "typeorm": "^0.2.32",
+    "uuid": "^8.3.2"
+  }
+}
